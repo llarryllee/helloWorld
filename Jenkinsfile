@@ -20,6 +20,7 @@ pipeline {
           }
           steps {
             echo '$myJobName'
+            sh 'echo "myJobName=$myJobName"'
           }
         }
       }
