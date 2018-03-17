@@ -4,10 +4,7 @@ pipeline {
     stage('Initialize') {
       steps {
         echo 'Welcome to my pipeline'
-        sh '''whoami 
-
-&& pwd && df -h
-'''
+        sh 'whoami'
       }
     }
   }
