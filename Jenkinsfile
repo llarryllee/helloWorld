@@ -14,6 +14,14 @@ pipeline {
             sh 'vm_stat'
           }
         }
+        stage('Initialize Step 20') {
+          environment {
+            myJobName = 'helloWorld3'
+          }
+          steps {
+            echo '$myJobName'
+          }
+        }
       }
     }
   }
