@@ -25,4 +25,7 @@ pipeline {
       }
     }
   }
+  environment {
+    myJobName = 'helloWorld3-Job'
+  }
 }
