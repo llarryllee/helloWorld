@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Initialize Step 10') {
           steps {
-            sh 'free -h'
+            sh 'vm_stat'
           }
         }
       }
